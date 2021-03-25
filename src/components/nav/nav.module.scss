@@ -1,17 +1,22 @@
 .navContainer{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     .logo{
         margin-left: 20%;
     }
     .navButtons{
-        width: 40%;
-        padding: 20px 0;
+        width: 35%;
+        margin: 35px 45px;
         display: flex;
+        justify-content: space-evenly;
         .linkItem{
             color: #fafafa;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 2.3rem;
             margin: 0 13px;
         }
     }
