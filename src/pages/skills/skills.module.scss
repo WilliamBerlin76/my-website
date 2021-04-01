@@ -17,5 +17,16 @@
         font-size: 2.7rem;
         z-index: 1;
     }
+    .cardsContainer{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        height: 60%;
+        width: 75%;
+        margin-top: 200px;
+        border-radius: 15px;
+        margin: 185px auto;
+    }
 }
 
