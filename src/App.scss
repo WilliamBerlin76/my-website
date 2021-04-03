@@ -9,3 +9,12 @@
   width: 100vw;
   z-index: -1;
 }
+
+.fab{
+  font-size: 5rem;
+  color: #fafafa;
+  transition: .25s;
+  &:hover{
+    color: #fafafaab
+  }
+}

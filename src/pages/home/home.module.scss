@@ -45,5 +45,11 @@
                 transition: .2s;
             }
         }
+        .iconContainer{
+            display: flex;
+            margin-left: 120px;
+            width: 200px;
+            justify-content: space-between;
+        }
     }
 }

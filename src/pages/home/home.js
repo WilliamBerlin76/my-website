@@ -13,6 +13,15 @@ const Home = () => {
                     I build websites.
                 </span>
                 <button className={home.aboutButton}>about me</button>
+                <div className={home.iconContainer}>
+                    <a href="https://github.com/WilliamBerlin76" target="_blank" rel="noreferrer">
+                            <i className="fab fa-github"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/william-berlin-75695b193/" target="_blank" rel="noreferrer">
+                        <i className="fab fa-linkedin"/>
+                    </a>
+                </div>
+                
             </div>
             
         </section>
