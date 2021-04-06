@@ -1,0 +1,56 @@
+.card{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 30px;
+    background: #435072;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    
+    .imageContainer{
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        .colorOverlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #5e627963;
+            z-index: 2;
+            transition: .25s;
+        }
+        .pic{
+            width: 100%;
+            height: 100%;
+            transition: .25s;
+        }
+    }
+    
+    .titleContainer{
+        text-align: center;
+        margin-top: 10px;
+        .titleText{
+            color: #fafafa;
+            font-size: 1.5rem;
+            
+        }
+    }
+    &:hover {
+        .colorOverlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #00000000;
+            z-index: 2;
+            transition: .25s;
+        }
+        .pic{
+            
+            width: 105%;
+            height: 105%;
+            margin-left: -2.5%;
+            margin-top: -1.5%;
+        }
+    }
+}

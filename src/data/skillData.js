@@ -31,6 +31,7 @@ export const skillArray = [
             "Jest Testing Framework",
             "AWS",
             "Python",
+            "Github",
             "Good Attitude 💪"
         ]
     }

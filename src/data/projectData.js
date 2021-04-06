@@ -6,6 +6,7 @@ export const projectData = [
         backend:'https://github.com/Lambda-School-Labs/flashcards-be', 
         deployedLink: 'https://mneme-flashcards.netlify.com/',
         description: 'mNeme is a flashcard application intended to aid students in their studies. Users can create, edit, remove, and archive their decks and flashcards in this app. mNeme was built using React.js on the frontend, and Node.js with a cloud firestore database on the backend.',
+        coverImage: '../../assets/mNeme.jpg'
         
     },
     // {
@@ -32,7 +33,7 @@ export const projectData = [
         githubLink:'https://github.com/WilliamBerlin76/snake', 
         deployedLink:'https://thebigsnake.netlify.app',
         description: "Classic snake game created with vanilla JavaScript. Play as a snake as you try to eat food across the map. The more you eat, the bigger you get, and the faster you move. Don't run into the walls, or yourself!",
-        
+        coverImage: '../../assets/Snake.jpg'
     },
     {
         name:'Goal Keeper', 
@@ -41,7 +42,7 @@ export const projectData = [
         backend: 'https://github.com/WilliamBerlin76/node-goals', 
         deployedLink:'https://goal-keeper.netlify.app',
         description: 'Goal setting web application designed to help users set and achieve their goals. Users can organize their goals into different categories, and list the steps they will take to achieve their goal. The frontend was built with React.js, and the backend was built with Node.js',
-        
+        coverImage: '../../assets/Goal-Keeper.jpg'
     },
     {
         name:'Guidr', 
@@ -49,7 +50,7 @@ export const projectData = [
         githubLink: 'https://github.com/Build-Week-FT-Guidr', 
         deployedLink:'https://guidr.now.sh/',
         description: 'Guidr is an app that lets outdoor guides record their journeys to build their outdoor resume. Using this web app, guides can add, edit, and delete trips to and from their trip record. The frontend was built using React.js, and the backend was built with Node.js.',
-        
+        coverImage: '../../assets/Guidr.jpg'
     },
     // {
     //     name:'Weight Lifting Journal', 
