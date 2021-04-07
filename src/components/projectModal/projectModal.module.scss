@@ -1,0 +1,36 @@
+.colorOverlay{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #19193d7e;
+}
+.modal{
+    overflow: hidden;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    margin: 5% auto;
+    z-index: 2;
+    width: 30%;
+    height: 80%;
+    background: #e9dcdc;
+    .imgContainer{
+        width: 100%;
+        img{
+            width: 100%
+        }
+    }
+    .nameContainer{
+        text-align: center;
+        margin-top: -10px;
+        .nameText{
+            background: #7574b8;
+            color: #fafafa;
+            font-size: 1.5rem;
+            padding: 5px;
+            box-shadow: 5px 3px 10px #3a3636;
+        }
+    }
+}
