@@ -29,6 +29,11 @@ const Project = (props) => {
                     name={props.name}
                     coverImage={props.coverImage}
                     toggleModal={toggleModal}
+                    appLink={props.appLink}
+                    frontendLink={props.frontendLink}
+                    backendLink={props.backendLink}
+                    githubLink={props.githubLink}
+                    description={props.description}
                 />
             )}
         </>

@@ -6,6 +6,7 @@
     height: 100vh;
     background: #19193d7e;
 }
+
 .modal{
     overflow: hidden;
     border-radius: 10px;
@@ -31,6 +32,18 @@
             font-size: 1.5rem;
             padding: 5px;
             box-shadow: 5px 3px 10px #3a3636;
+        }
+    }
+    .links{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 35px;
+        .projectLink{
+            font-size: 1.3rem;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

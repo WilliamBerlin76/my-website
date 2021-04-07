@@ -1,7 +1,7 @@
 import React from 'react';
 import projectModal from "./projectModal.module.scss";
 
-const ProjectModal = ({ coverImage, name, toggleModal }) => {
+const ProjectModal = ({ coverImage, name, toggleModal, appLink, githubLink, frontendLink, backendLink, description, techBullets }) => {
     return (
         <>
             <div 
@@ -17,6 +17,40 @@ const ProjectModal = ({ coverImage, name, toggleModal }) => {
                 </div>
                 <div className={projectModal.nameContainer}>
                     <span className={projectModal.nameText}>{name}</span>
+                </div>
+                <div className={projectModal.links}>
+                    {appLink && (
+                        <a 
+                            className={projectModal.projectLink} 
+                            href={appLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >Try here!</a>
+                    )}
+                    {frontendLink && (
+                        <a 
+                            className={projectModal.projectLink} 
+                            href={frontendLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >Frontend repo</a>
+                    )}
+                    {backendLink && (
+                        <a 
+                            className={projectModal.projectLink} 
+                            href={backendLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >Backend repo</a>
+                    )}
+                    {githubLink && (
+                        <a 
+                            className={projectModal.projectLink} 
+                            href={githubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >github page</a>
+                    )}
                 </div>
             </div>
         </>

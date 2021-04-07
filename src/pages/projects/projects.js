@@ -14,6 +14,11 @@ export default function Projects() {
                         <Project 
                             name={item.name}
                             coverImage={item.coverImage}
+                            appLink={item.deployedLink}
+                            frontendLink={item.frontend ? item.frontend : false}
+                            backendLink={item.backend ? item.backend : false}
+                            githubLink={item.githubLink ? item.githubLink : false}
+                            description={item.description}
                         />
                     )
                 })}
