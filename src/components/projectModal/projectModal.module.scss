@@ -17,6 +17,7 @@
     width: 30%;
     height: 80%;
     background: #e9dcdc;
+    box-shadow: 0 0 10px 3px #242323;
     .imgContainer{
         width: 100%;
         img{
@@ -43,6 +44,32 @@
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
+            }
+        }
+    }
+    .descriptionContainer{
+        margin: 35px 25px;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+    .techContainer{
+        width: 100%;
+        .techTitle{
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding: 4px;
+            background: #fffefe;
+        }
+        .listContainer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 120px;
+            margin: 0 20px;
+            li{
+                margin-bottom: 10px;
+                font-size: 1.2rem;
             }
         }
     }

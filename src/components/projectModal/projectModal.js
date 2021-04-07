@@ -52,6 +52,19 @@ const ProjectModal = ({ coverImage, name, toggleModal, appLink, githubLink, fron
                         >github page</a>
                     )}
                 </div>
+                <div className={projectModal.descriptionContainer}>
+                    {description}
+                </div>
+                <div className={projectModal.techContainer}>
+                    <div className={projectModal.techTitle}>Technologies I used</div>
+                    <ul className={projectModal.listContainer}>
+                        {techBullets.map(item => {
+                            return (
+                                <li>{item}</li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </div>
         </>
     )

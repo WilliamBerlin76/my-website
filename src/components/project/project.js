@@ -34,6 +34,7 @@ const Project = (props) => {
                     backendLink={props.backendLink}
                     githubLink={props.githubLink}
                     description={props.description}
+                    techBullets={props.techBullets}
                 />
             )}
         </>

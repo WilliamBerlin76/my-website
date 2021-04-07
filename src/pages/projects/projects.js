@@ -19,6 +19,7 @@ export default function Projects() {
                             backendLink={item.backend ? item.backend : false}
                             githubLink={item.githubLink ? item.githubLink : false}
                             description={item.description}
+                            techBullets={item.technologies}
                         />
                     )
                 })}
