@@ -49,7 +49,7 @@ const ProjectModal = ({ coverImage, name, toggleModal, appLink, githubLink, fron
                             href={githubLink}
                             target="_blank"
                             rel="noreferrer"
-                        >github page</a>
+                        >Github page</a>
                     )}
                 </div>
                 <div className={projectModal.descriptionContainer}>
