@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import axios from "axios";
 import ReactLoading from "react-loading";
 import contactForm from "./contactForm.module.scss";
+import MessageModal from "../messageModal/messageModal.js";
 
 const ContactForm = () => {
 
     const [message, setMessage] = useState({});
-    const [displayResponse, setDisplayResponse] = useState(false);
+    const [responseMessage, setResponseMessage] = useState("");
     const [isFetching, setIsFetching] = useState(false);
     const [nameErr, setNameErr] = useState(false);
     const [emailErr, setEmailErr] = useState(false);
@@ -14,6 +15,10 @@ const ContactForm = () => {
     const [messageErr, setMessageErr] = useState(false);
 
     const emailReg = new RegExp(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/);
+
+    const removeResponseMessage = () => {
+        setResponseMessage("");
+    }
 
     const handleChange = e => {
         setMessage({
@@ -47,12 +52,11 @@ const ContactForm = () => {
             setIsFetching(true);
             axios.post(process.env.REACT_APP_API_POST, message)
             .then(res => {
-                alert(`Your message was sent.\nThank you for reaching out!`);
+                setResponseMessage(`Your message was sent.\nThank you for reaching out!`);
                 setIsFetching(false);
             })
             .catch(err => {
-                console.log(err);
-                alert('There was an error sending your message to the server');
+                setResponseMessage("Oh no! Your message failed to send.\nPlease try again later");
                 setIsFetching(false);
             });
         } else {
@@ -61,8 +65,15 @@ const ContactForm = () => {
     };
 
     return (
+        <>
+        {responseMessage && (
+            <MessageModal 
+                message={responseMessage}
+                removeResopnseMessage={removeResponseMessage}
+            />
+        )}
         <div className={contactForm.formContainer}>
-           
+            
             <form className={contactForm.form}
                 onSubmit={handleSubmit}
             >
@@ -104,6 +115,7 @@ const ContactForm = () => {
                 
             </form> 
         </div>
+        </>
     )
 };
 
