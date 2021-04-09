@@ -52,7 +52,7 @@ const ContactForm = () => {
             setIsFetching(true);
             axios.post(process.env.REACT_APP_API_POST, message)
             .then(res => {
-                setResponseMessage(`Your message was sent.\nThank you for reaching out!`);
+                setResponseMessage(`Your message was sent. Thank you for reaching out!`);
                 setIsFetching(false);
             })
             .catch(err => {

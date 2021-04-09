@@ -5,9 +5,16 @@ export default function MessageModal({ message, removeResopnseMessage }) {
     return (
         <>
         <div className={messageModal.colorOverlay}></div>
-        <div className={messageModal.modal}>
-
+        <div className={messageModal.modalContainer}>
+            <div className={messageModal.modal}>
+                <p className={messageModal.message}>{message}</p>
+                <button 
+                    className={messageModal.confirmButton}
+                    onClick={removeResopnseMessage}
+                >OK</button>
+            </div>
         </div>
+       
         </>
     )
 };
