@@ -1,6 +1,6 @@
 .formContainer{
     position:relative;
-    margin: 150px auto;
+    margin: 200px auto;
     width: 35%;
     
     .form{
@@ -25,13 +25,26 @@
             border: 0;
             font-size: 1.3rem;
             padding: 5px;
-            height: 200px;
+            height: 250px;
             background: #00000000;
             max-width: 100%;
             color: #d2ccdd;
         }
         .largeInput::placeholder{
             color: #8585a5
+        }
+        .sendButton{
+            background: #00000000;
+            border: 2px solid #d1cdcd;
+            color: #d1cdcd;
+            font-size: 1.55rem;
+            width: 30%;
+            cursor: pointer;
+            transition: .25s;
+            &:hover{
+                background: #d1cdcd;
+                color: #435072
+            }
         }
     }
 }

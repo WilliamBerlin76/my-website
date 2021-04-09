@@ -8,6 +8,10 @@ const Contact = () => {
         <section className={contact.pageContainer}>
             <div className={contact.colorOverlay}></div>
             <div className={contact.titleText}>Contact Me</div>
+            <div className={contact.actionText}>
+                <span className={contact.questionText}>Interested in working with me?</span>
+                <span className={contact.instructionText}>Reach out using the form below or send me an email at william.berlin76@gmail.com!</span>
+            </div>
             <ContactForm />
         </section>
     )
