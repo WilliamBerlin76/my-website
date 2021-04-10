@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .background-image{
   background-image: url("./assets/top-background.jpg");
   position: fixed;

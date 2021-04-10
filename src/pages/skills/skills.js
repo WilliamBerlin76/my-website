@@ -5,7 +5,7 @@ import { skillArray } from "../../data/skillData";
 
 const Skills = () => {
     return (
-        <section className={skills.skillsSection}>
+        <section className={skills.skillsSection} id="skills">
             <div className={skills.colorOverlay}></div>
             <span className={skills.headerText}>Tools that I work with</span>
             <div className={skills.cardsContainer}>

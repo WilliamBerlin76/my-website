@@ -5,7 +5,7 @@ import ContactForm from "../../components/contactForm/contactForm.js";
 
 const Contact = () => {
     return (
-        <section className={contact.pageContainer}>
+        <section className={contact.pageContainer} id="contact">
             <div className={contact.colorOverlay}></div>
             <div className={contact.titleText}>Contact Me</div>
             <div className={contact.actionText}>

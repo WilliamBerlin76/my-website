@@ -5,7 +5,7 @@ import { projectData } from '../../data/projectData';
 
 export default function Projects() {
     return (
-        <section className={projects.pageContainer}>
+        <section className={projects.pageContainer} id="projects">
             <div className={projects.colorOverlay}></div>
             <div className={projects.titleText}>Things that I've worked on</div>
             <div className={projects.cardsContainer}>

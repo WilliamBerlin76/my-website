@@ -1,7 +1,6 @@
 import React from 'react';
 import nav from './nav.module.scss';
 import Logo from "../../assets/logo.jpg";
-import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
@@ -11,9 +10,9 @@ const Nav = () => {
             </div>
 
             <div className={nav.navButtons}>
-                <NavLink className={nav.linkItem} to="/">resume</NavLink>
-                <NavLink className={nav.linkItem} to="/">projects</NavLink>
-                <NavLink className={nav.linkItem} to="/">contact</NavLink>
+                <a href="#skills" className={nav.linkItem}>Skills</a>
+                <a href="#projects" className={nav.linkItem}>projects</a>
+                <a href="#contact" className={nav.linkItem}>contact</a>
             </div>
         </section>
     )
