@@ -1,0 +1,26 @@
+.aboutContainer{
+    position: relative;
+    font-size: 1.4rem;
+    width: 50%;
+    line-height: 1.5;
+    margin: 12% auto;
+
+    .backButton{
+        transition: .2s;
+            font-size: 2rem;
+            margin: 38px 0;
+            color: #fafafa;
+            border: solid 2px #fafafa;
+            border-radius: 50px;
+            width: 250px;
+            padding: 10px 30px;
+            background: #ffffff00;
+            cursor: pointer;
+            &:hover{
+                border: solid 2px #00000000;
+                background: #fafafa8b;
+                color: #182035;
+                transition: .2s;
+            }
+    }
+}
