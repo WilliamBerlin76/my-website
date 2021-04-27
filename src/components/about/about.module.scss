@@ -1,10 +1,14 @@
 .aboutContainer{
     position: relative;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     width: 50%;
     line-height: 1.5;
-    margin: 12% auto;
+    margin: 200px auto;
 
+    @media screen and (max-width: 1350px) {
+        width: 80%;
+        margin: 220px auto
+    }
     .backButton{
         transition: .2s;
             font-size: 2rem;
