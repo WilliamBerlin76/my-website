@@ -4,10 +4,11 @@
     width: 50%;
     line-height: 1.5;
     margin: 200px auto;
-
+    transition: .25s;
     @media screen and (max-width: 1350px) {
         width: 80%;
-        margin: 220px auto
+        margin: 220px auto;
+        font-size: 1.15rem;
     }
     .backButton{
         transition: .2s;
@@ -27,4 +28,13 @@
                 transition: .2s;
             }
     }
+}
+
+.fadeInToggle {
+    opacity: 1
+}
+
+.fadeOutToggle {
+    opacity: 0;
+    transform: translateY(25%);
 }

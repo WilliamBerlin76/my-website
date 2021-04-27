@@ -1,9 +1,13 @@
 import React from "react";
 import about from  "./about.module.scss";
 
-const About = ({ toggleAbout }) => {
+const About = ({ showAbout }) => {
     return (
-        <div className={about.aboutContainer}>
+        <div className={
+                showAbout === true ? 
+                `${about.aboutContainer} ${about.fadeInToggle}` : 
+                `${about.aboutContainer} ${about.fadeOutToggle}`
+            }>
             <p>
                 Hello! My name is William Berlin, and I’m a web developer. 
                 I enjoy creating pretty user interfaces, writing clean and efficient backend code, 
@@ -19,11 +23,7 @@ const About = ({ toggleAbout }) => {
                 Have any questions? Want to work with me? Feel free to reach out to me at william.berlin76@gmail.com, 
                 or send a message through my contact form!
             </p>
-           
-            <button 
-                className={about.backButton}
-                onClick={toggleAbout}
-            >{"<-"}</button>
+
         </div>
     )
 }
