@@ -16,6 +16,11 @@
         color: #fafafa;
         font-size: 2.7rem;
         z-index: 1;
+        @media screen and (max-width: 600px) {
+            font-size: 2rem;
+            text-align: center;
+            margin-right: 0px;
+        }
     }
     .cardsContainer{
         position: relative;
@@ -23,8 +28,10 @@
         flex-wrap: wrap;
         justify-content: space-around;
         width: 75%;
-        margin-top: 200px;
         border-radius: 15px;
         margin: 185px auto;
+        @media screen and (max-width: 600px) {
+            margin: 125px auto;
+        }
     }
 }

@@ -8,7 +8,9 @@
     position: relative;
     transition: .25s;
     cursor: pointer;
-    
+    @media screen and (max-width: 460px) {
+        height: 320px;
+    }
     .imageContainer{
         position: relative;
         overflow: hidden;
@@ -34,6 +36,9 @@
         .titleText{
             color: #fafafa;
             font-size: 1.5rem;
+            @media screen and (max-width: 600px) {
+                font-size: 1.3rem;
+            }
             
         }
     }

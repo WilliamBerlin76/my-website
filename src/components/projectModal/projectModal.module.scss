@@ -20,6 +20,9 @@
     height: 80%;
     background: #e9dcdc;
     box-shadow: 0 0 10px 3px #242323;
+    @media screen and (max-width: 550px) {
+        min-width: 350px;
+    }
     .imgContainer{
         width: 100%;
         img{
@@ -35,15 +38,22 @@
             font-size: 1.5rem;
             padding: 5px;
             box-shadow: 5px 3px 10px #3a3636;
+            @media screen and (max-width: 550px) {
+                font-size: 1.1rem;
+            }
         }
     }
     .links{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin-top: 35px;
         .projectLink{
             font-size: 1.3rem;
             text-decoration: none;
+            @media screen and (max-width: 550px) {
+                font-size: 1.1rem;
+            }
             &:hover{
                 text-decoration: underline;
             }
@@ -53,6 +63,9 @@
         margin: 35px 25px;
         font-size: 1.1rem;
         line-height: 1.6rem;
+        @media screen and (max-width: 550px) {
+            font-size: 1rem;
+        }
     }
     .techContainer{
         width: 100%;
@@ -69,9 +82,13 @@
             flex-wrap: wrap;
             max-height: 120px;
             margin: 0 20px;
+            
             li{
                 margin-bottom: 10px;
                 font-size: 1.2rem;
+                @media screen and (max-width: 550px) {
+                    font-size: 1rem;
+                }
             }
         }
     }
