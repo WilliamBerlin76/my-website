@@ -1,9 +1,14 @@
 import React from "react";
 import hamburgerNav from "./hamburgerNav.module.scss";
 
-const HamburgerNav = () => {
+const HamburgerNav = ({ showNav }) => {
     return (
-        <div className={hamburgerNav.container}>
+        <div className={
+            showNav ?
+                `${hamburgerNav.container} ${hamburgerNav.showNav}` 
+                :
+                `${hamburgerNav.container} ${hamburgerNav.hideNav}`    
+        }>
             <span>
                 <a href="#skills" className={hamburgerNav.linkItem}>skills</a>
             </span>

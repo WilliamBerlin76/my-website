@@ -4,8 +4,9 @@ import about from  "./about.module.scss";
 const About = ({ showAbout }) => {
     return (
         <div className={
-                showAbout === true ? 
-                `${about.aboutContainer} ${about.fadeInToggle}` : 
+                showAbout ? 
+                `${about.aboutContainer} ${about.fadeInToggle}` 
+                : 
                 `${about.aboutContainer} ${about.fadeOutToggle}`
             }>
             <p>

@@ -13,7 +13,7 @@ const Nav = () => {
     return (
         <section className={nav.navContainer}>
             <div className={nav.logoContainer}>
-                <img  className={nav.logo} src={Logo} alt="W logo" />
+                <img className={nav.logo} src={Logo} alt="W logo" />
             </div>
             {width <= 1000 ?
                 <Hamburger /> :

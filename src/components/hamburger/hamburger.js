@@ -7,7 +7,7 @@ const Hamburger = () => {
 
     const [showNav, setShowNav] = useState(false);
 
-    const toggleNav = e => {
+    const toggleNav = () => {
         setShowNav(!showNav);
     };
     
@@ -18,7 +18,9 @@ const Hamburger = () => {
                 <div className={hamburger.bar}></div>
                 <div className={hamburger.bar}></div>
             </div>
-            {showNav && <HamburgerNav />} 
+            <HamburgerNav
+                showNav={showNav}
+            />
         </div>
     )
 };
