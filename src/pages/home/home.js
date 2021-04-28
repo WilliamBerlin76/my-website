@@ -15,10 +15,10 @@ const Home = () => {
         
             <div className={home.mainTextContainer}>
                 <span className={home.headerText}>
-                    Hey, <br></br> I'm Will
+                    Hi, <br></br> I'm William!
                 </span>
                 <span className={home.headerSubText}>
-                    I build websites.
+                    I'm a software developer
                 </span>
                 <button 
                     className={home.aboutButton}

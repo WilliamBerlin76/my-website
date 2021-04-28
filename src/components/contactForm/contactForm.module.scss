@@ -2,7 +2,10 @@
     position:relative;
     margin: 200px auto;
     width: 35%;
-    
+    min-width: 500px;
+    @media screen and (max-width: 600px) {
+        min-width: 300px;
+    }
     .form{
         display:flex;
         flex-direction: column;
@@ -16,6 +19,9 @@
             font-size: 1.45rem;
             padding: 5px;
             background: #00000000;
+            @media screen and (max-width: 600px) {
+                font-size: 1.1rem
+            }
         }
         .inputField::placeholder{
             color: #8585a5
@@ -29,6 +35,9 @@
             background: #00000000;
             max-width: 100%;
             color: #d2ccdd;
+            @media screen and (max-width: 600px) {
+                font-size: 1rem;
+            }
         }
         .largeInput::placeholder{
             color: #8585a5
@@ -36,6 +45,9 @@
         .errors{
             color: #db9b9b;
             font-size: 1.2rem;
+            @media screen and (max-width: 600px) {
+                font-size: 1.1rem;
+            }
         }
         .sendButton{
             background: #00000000;

@@ -10,7 +10,7 @@ const About = ({ showAbout }) => {
                 `${about.aboutContainer} ${about.fadeOutToggle}`
             }>
             <p>
-                Hello! My name is William Berlin, and I’m a web developer. 
+                Hello! My name is William Berlin, and I’m a software developer. 
                 I enjoy creating pretty user interfaces, writing clean and efficient backend code, 
                 and learning about new things.
             </p>
