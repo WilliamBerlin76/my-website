@@ -1,0 +1,18 @@
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 10px 0 0;
+    .bars{
+        position: relative;
+        cursor: pointer;
+        z-index: 4;
+        .bar {
+            width: 25px;
+            height: 4px;
+            background: #fafafa;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+    }
+}
