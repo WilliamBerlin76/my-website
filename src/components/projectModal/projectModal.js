@@ -12,6 +12,7 @@ const ProjectModal = ({ coverImage, name, toggleModal, appLink, githubLink, fron
             <div 
                 className={projectModal.modal}
             >
+                <i class="far fa-times-circle" onClick={toggleModal}></i>
                 <div className={projectModal.imgContainer}>
                     <img src={coverImage} alt="project"/>
                 </div>
